@@ -1,0 +1,85 @@
+body {
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica;
+    font-size: 100%;
+    
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ 
+
+
+/*html 5 elements */
+
+header {
+    height: 100px;
+    background-color: #4d4849;
+}
+
+email {
+
+    color: pink;
+
+}
+
+section {
+    min-height: 500px;
+    background-color: lightgray;
+    float: right;
+    width: 66%;
+}
+
+aside {
+    width: 33%;
+    background-color: #7a7575;
+    min-height: 500px;
+    float: left;
+}
+
+footer {
+    height: 50px;
+    clear: both;
+    background-color: #9f9d9d;
+}
+
+
+/* media query tablet 768px */
+
+@media screen and (max-width: 768px) {
+
+section {
+/*    min-height: 500px;*/
+    background-color: red;
+/*    float: right;*/
+    width: 90%;
+    padding: 5%;
+}
+
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    header{
+
+
+        height: 40px;
+    }
+
+
+    aside {
+
+        display: none;
+
+    }
+ 
+} /* end break point 768 */
+
+
+
