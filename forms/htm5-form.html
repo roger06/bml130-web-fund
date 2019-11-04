@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    
-        <link rel="stylesheet" href="form.css">
-    </head>
+
+<head>
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
 <body>
 
-<h1>HTML 5 form</h1>
-    
-<div class="form-style-2">
-    <h2>This is quite a nice form</h2>
-    
-    <form action="" method="post">
-        <label for="field1"><span>Name <span class="required">*</span></span>
-            <input type="text" class="input-field" name="name" value="" />
-        </label>
-    
-        <label for="field2"><span>Email <span class="required">*</span></span>
+    <h1>HTML 5 form</h1>
+
+    <div class="form-style-2">
+        <h2>This is quite a nice form</h2>
+        <p>It uses the email entry type, the 'required' attribute and the 'placeholder' attribute</p>
+
+        <form action="" method="post">
+            <label for="field1"><span>Name <span class="required">*</span></span>
+                <input type="text" class="input-field" name="name" value="" />text
+            </label>
+
+            <label for="email"><span>Email <span class="required">*</span></span>
+
+                <input type="email" class="input-field" name="email" value="" />email</label>
             
-            <input type="email" class="input-field" name="field2" value="" /></label>
-      
-        
-  <label for="hobbits"><span>Name a Hobbit</span>    
-        <input list="hobbits" name="hobbit" class="input-field" placeholder="Please start typing a hobbit">
-  <datalist id="hobbits">
-    <option value="Frodo">
-    <option value="Sam">
-    <option value="Pippin">
-    <option value="Merry">
-    <option value="Proudfoot">
-  </datalist>
-</label> 
-        
-        
-        <label for="field4"><span>You are</span><select name="field4" class="select-field">
-                <option value="General Question">Student</option>
-                <option value="Advertise">Staff</option>
-                <option value="Partnership">Partner college</option>
-            </select></label>
-        <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+            <label for="age"><span>Age <span class="required">*</span></span>
 
-        <label><span> </span><input type="submit" value="Submit" /></label>
-    </form>
-</div>
-        
+                <input type="number" class="input-field" name="age" value=""/>number</label>
+
+
+            <label for="hobbits"><span>Name a Hobbit</span>
+                <input list="hobbits" name="hobbit" class="input-field" placeholder="Please start typing a hobbit">
+                <datalist id="hobbits">
+                    <option value="Frodo">
+                    <option value="Sam">
+                    <option value="Pippin">
+                    <option value="Merry">
+                    <option value="Proudfoot">
+                </datalist>datalist
+            </label>
+
+
+            <label for="field4"><span>You are</span><select name="field4" class="select-field">
+                    <option value="General Question">Student</option>
+                    <option value="Advertise">Staff</option>
+                    <option value="Partnership">Partner college</option>
+                </select>select</label>
+            <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea>textarea</label>
+
+            <label><span> </span><input type="submit" value="Submit" /></label>
+        </form>
+    </div>
+
 </body>
+
 </html>
-
-
-
-
-
-
