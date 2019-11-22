@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<meta charset="utf-8">
 <head>
-    <title>Responsive Web design - picture tag</title>
+    <title>Responsive Web design - scaled image</title>
     <!--    <link rel="stylesheet" href="responsive.css">-->
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
@@ -11,12 +11,29 @@
 
             margin: 0 auto;
             width: 80%;
+            font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
         section {
-            border: 1px red dashed
+            border: 1px red dashed;
+            position: relative;
         }
+        
+        #imagedetails{ 
+            border: 1px dashed black;
+            position: absolute;
+            right: 1%;
+            top: 29%;
+            padding: 15px;
+            border-radius: 15px;
+            }
 
+        .imagedetails {
+
+            height: 20px;
+           
+        }
+        
         img {
 
             width: 100%;
@@ -27,6 +44,11 @@
                 display: none;
             }
 
+        .blue {
+
+            color: white;
+            background-color: blue;
+        }
 
         @media only screen and (max-width: 450px) {
             body {
@@ -39,6 +61,13 @@
 
             }
 
+            #imagedetails{ 
+          
+            position:inherit;
+           
+             
+            }
+            
             section {
                 border: 1px darkblue dotted
             }
@@ -59,21 +88,51 @@
 <body>
 
     <div id="container">
-
-
-
         <section>
-
             <h1>Inline image</h1>
-
             <h2 class="large">Large breakpoint </h2>    
+            <p class="large">At the large break point the image is 100%,. But has a max-width of 500px.<br>
+            This is not efficient.</p>
             <h2 class="small">Small breakpoint (450px)</h2>    
 
-            <img src="img/lion.jpg" alt="Image">
+            <img src="img/lion.jpg" alt="Image" id="photo">
+
+            <div id="imagedetails">Image details will be updated here</div>
+            <!-- div to show details about the image -->
 
         </section>
 
+        <button id="button">Show image details</button>
+        <script> 
+        
+        var img = new Image();
+        img.src = 'img/lion.jpg';
 
+         
+               document.getElementById('button').onclick = function () {
+               // alert(img.values());
+            //    console.log(img);
+            //    console.log(img.clientWidth);
+               console.log(document.getElementById("photo").width);
+//                var width = img;
+// var height = img.clientHeight;
+
+
+               document.getElementById("imagedetails").className = "blue";
+               document.getElementById("imagedetails").innerHTML = "Width: " + img.width + ' x height:' + img.height;
+            }
+        
+        
+       
+            // img.onload = function() {
+            //     return;
+            // // alert(this.width + 'x' + this.height);
+            // document.getElementById("imagedetails").className = "blue";
+            //    document.getElementById("imagedetails").innerHTML = "blah blah" + this.width + 'x' + this.height;
+
+            // }
+            
+        </script>
 
 
 
