@@ -23,7 +23,7 @@
             border: 1px dashed black;
             position: absolute;
             right: 1%;
-            top: 29%;
+            top: 6%;
             padding: 15px;
             border-radius: 15px;
             }
@@ -37,9 +37,19 @@
         img {
 
             width: 100%;
-            max-width: 500px;
+            max-width: 700px;
 
         }
+        .imgnostyle {
+
+                    width: 100%;
+                    /* max-width: 700px; */
+                    border: 2px black solid;
+                    max-width: inherit;
+
+        }
+
+
          .small {
                 display: none;
             }
@@ -63,7 +73,7 @@
 
             #imagedetails{ 
           
-            position:inherit;
+                position:inherit;
            
              
             }
@@ -91,7 +101,7 @@
         <section>
             <h1>Inline image</h1>
             <h2 class="large">Large breakpoint </h2>    
-            <p class="large">At the large break point the image is 100%,. But has a max-width of 500px.<br>
+            <p class="large">At the large break point the image is 100%,. But has a max-width of 700px.<br>
             This is not efficient.</p>
             <h2 class="small">Small breakpoint (450px)</h2>    
 
@@ -102,35 +112,33 @@
 
         </section>
 
-        <button id="button">Show image details</button>
+        <button id="showdetails">Show image details</button>
+        <button id="showorig">Show orginal image</button>
         <script> 
         
         var img = new Image();
         img.src = 'img/lion.jpg';
 
          
-               document.getElementById('button').onclick = function () {
-               // alert(img.values());
-            //    console.log(img);
-            //    console.log(img.clientWidth);
-               console.log(document.getElementById("photo").width);
-//                var width = img;
-// var height = img.clientHeight;
-
-
+               document.getElementById('showdetails').onclick = function () {
+               var w = document.getElementById("photo").width;
+               var h = document.getElementById("photo").height;
+               console.log("Image width = " + w);
+               console.log("Image height = " + h);
                document.getElementById("imagedetails").className = "blue";
-               document.getElementById("imagedetails").innerHTML = "Width: " + img.width + ' x height:' + img.height;
+               document.getElementById("imagedetails").innerHTML = "Width: " + w + ' x height:' + h;
             }
         
+
+            document.getElementById('showorig').onclick = function () {
+            
+            
+               document.getElementById("photo").className = "imgnostyle";
+            }
+        
+
         
        
-            // img.onload = function() {
-            //     return;
-            // // alert(this.width + 'x' + this.height);
-            // document.getElementById("imagedetails").className = "blue";
-            //    document.getElementById("imagedetails").innerHTML = "blah blah" + this.width + 'x' + this.height;
-
-            // }
             
         </script>
 
