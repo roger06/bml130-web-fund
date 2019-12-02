@@ -120,16 +120,18 @@
 
 
 
-
+            <div id="network">Show in network tab.</div>
           
     
     </div><!-- container -->
 
     <script>
     
-        document.getElementById("stop").addEventListener('click', function() {
+        document.getElementById("stop").addEventListener('click', function(e) {
 
             // alert('stop button clicked');
+            // console.log(e);
+            // console.log(e.timeStamp);
             document.getElementById("instruction").className = "stop";
 
         })
