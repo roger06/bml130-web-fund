@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Scalable background images - CSS only</title>
-<link rel="stylesheet" href="bg-images.css">
+<!--<link rel="stylesheet" href="bg-images.css">-->
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
  
 <!--  style specified here to save confusion-->
@@ -13,7 +13,38 @@
     body {
         
         
-        background-image: url(bg1.jpg);
+        background-image: url(img/bg1.jpg);
+        color: white;
+        
+/*         The background image is displayed in its original size*/
+        background-size: cover; 
+    	background-size: contain;
+    	background-size: auto;
+/*         background-size: auto|length|cover|contain|initial|inherit;*/
+        
+        
+/*
+        
+        auto 	Default value. The background image is displayed in its original size 
+        
+length 	Sets the width and height of the background image. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto". Read about length units 	
+        
+percentage 	Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto" 	
+        
+cover 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges 	
+        
+contain 	Resize the background image to make sure the image is fully visible 	
+        
+initial 	Sets this property to its default value. Read about initial 	
+        
+inherit 	Inherits this property from its parent element. Read about inherit
+        
+        
+*/
+        
+        
+        
+
     }
     
     </style>
@@ -32,7 +63,7 @@
 	<div id="innercontainer">
 
 		<header>
-			<img src="img/logo.png" width="300" height="89">
+<!--			<img src="img/logo.png" width="300" height="89">-->
 
 			
         
