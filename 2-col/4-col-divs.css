@@ -36,7 +36,7 @@ body {
 /*                border: 1px solid red;*/
 width:79%;
                 float: right;
-                   background-color: black;
+                   background-color:blue;
                 color: white;
             }      
             
@@ -46,9 +46,14 @@ width:79%;
                 clear: both;
                    background-color: red;
             }      
+            .mainimg {
+ width: 30%;
+            }
+/* 
+          img {
 
-
-
+                width: 30%;
+            } */
 
  
 
@@ -57,7 +62,8 @@ width:79%;
 
 @media screen and (max-width: 768px) {
 
-#container {
+
+ #container {
     width: 100%;
     margin: 0 auto;
 }
@@ -70,7 +76,7 @@ width:79%;
     
 #right {
 /*    min-height: 500px;*/
-    background-color: purple;
+    background-color: red;
 /*    float: right;*/
     width: 90%;
     padding: 5%;
@@ -91,4 +97,16 @@ width:79%;
 } /* end break point 768 */
 
 
- 
+@media screen and (max-width: 500px) {
+
+    #header {
+
+        height: 10px;
+        font-size: 8px;
+    }
+
+    #right {
+        background-color: white;
+    }
+
+}
