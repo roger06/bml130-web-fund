@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <title>Accessible form</title>
+</head>
+
+<body>
+    <!-- Insert your HTML here -->
+
+    <form>
+
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="textfield"><br>
+        <label for="address">Enter your address:</label>
+        <br>
+        <textarea id="address" name="addresstext"></textarea>
+        <br>
+        <fieldset>
+            <legend>Choose a shipping method:</legend>
+            <input id="overnight" type="radio" name="shipping" value="overnight">
+            <label for="overnight">Overnight</label><br>
+            <input id="twoday" type="radio" name="shipping" value="twoday">
+            <label for="twoday">Two day</label><br>
+            <input id="ground" type="radio" name="shipping" value="ground">
+            <label for="ground">Ground</label>
+        </fieldset>
+        <br>
+
+        <h2>HTML 5 specific</h2>
+
+        <label for="tel">Tel:</label>
+
+        <input type="tel" name="tel">
+        <br>
+
+        <label for="startdate">Start date:</label>
+        <input type="date" name="startdate">
+        <br>
+
+        <input type="submit" name="submit" value="Submit Search">
+        <input type="reset" name="reset" value="Reset">
+        <button>Activate</button>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+8 Annabella
+
+3 Rob
+
+
+7Dominik 
+
+
+6 Jack
+
+
+12 Adam
+
+
+13 James
+
+
+Accessibility
+
+definition
+
+Specialised tools
+
+easy for everyone
+
+mindset, motivation, goals
+
+Spectrum
+hearing issues
+Sight issues - blind / partially sighted
+Motor skills - arthritis
+
+Colour
+    helps distinguish one thing from another (graphs etc - use shape or patterns) - don't need to remove colour but don't rely on it. This helps everyone
+    
+    Names with colours
+
+Access. - Design at the start of the projetc rather than adding them later.
+
+
+
+Contrast
+
+use an online checker - 
+
+Animation / motion
+can create engagement / excitement
+
+vestibular disorder - balance , vertigo, dizziness - parallax effect = https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
+
+don't rely on animation
+
+Proximity / grouping    
+    
+    'straw test' - (vision like looking through a straw) - limted field of view - 
+        
+    e.g. visual feedback on or near what you're doing - e.g. on the add to cart button, not on the other side of the page
+    
+
+Keyboard navigation
+    You must be able to complete all tasks using a keyboard - this should be the very first test you do
+    
+    tab, enter, arrow keys, spacebar
+    blind - can't see mouse pointer
+    can see but using mouse is painful ('sighted keyboard user') - demo help site
+    
+    use outline: none; in CSS ? then use own :focus
+    https://www.w3schools.com/cssref/tryit.asp?filename=trycss_dim_width_inputfocus
+    
+    You can only tab to links (so not divs) - the function of the interface - so paragrpahs don''t need to be selectable with keyboard
+    
+    Auto tabbing with JS - can cause problems when reviewing or re-entering data
+    
+Flow of content
+    screen readers read in the order of the source
+    
+Touch devices
+    target size - some may tap with nose or feet
+    
+Audio and video
+    
+    Images - text euqivalent if meaning of page is affected without it
+    
+    Podcast - publish transcript.
+    
+    Images one of three > Information : functional : decorative???
+    
+Forms
+    every form element needs a <label>
+    
+    aria label
+    
+    placeholder
+    
+    HTML5 specific form types - recogised as 'different' by a phone OS - so keyboard will adapt to the input (numeric for phone number?, email shows @ and . )
+    
+    think about placement of error messages
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
