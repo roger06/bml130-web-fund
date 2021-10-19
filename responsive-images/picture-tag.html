@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
+<html>
+
 <head>
     <title>Responsive Web design - picture tag</title>
 <!--    <link rel="stylesheet" href="responsive.css">-->
@@ -9,71 +9,9 @@
 <style>
     
     #container {
-        font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
         margin:  0 auto;
         width: 80%;
-    }
-    .med, .small {
-
-        display: none;
-    }
-
-    #instruction {
-        float: right;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: maroon;
-        font-size: 1.6rem;
-        animation: blinkingText 1s infinite;
-    
-        
-    }
-
-    .stop {
-
-        animation: none !important;
-        /* display: none; */
-    }
-
-    @keyframes blinkingText {
-        
-        0% {
-            opacity: 0;
-        }
-        50% {
-            opacity: .5;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-
-
-
-    @media only screen and (max-width: 768px) {
-        .default, .small {
-
-        display: none;
-        }
-
-        .med {
-
-            display: inherit;
-        }
-
-    }
-    @media only screen and (max-width: 450px) {
-
-        .default, .med {
-
-        display: none;
-        }
-
-        .small {
-
-            display: inherit;
-        }
-
     }
     
     </style>
@@ -81,62 +19,31 @@
 </head>
 
 <body>
-        <div id="instruction">Decrease browser width --></div>
-        <button id="stop" >Stop animation!</button>
 
     <div id="container">
-
-    <h1>&lt;picture&gt; tag</h1>
-
-    <div class="default">
-         <h2 class="">Large break point</h2>
-         <p class="">Image = 800px - lion800.png</p>
-    </div> 
     
-    <div class="med">
-         <h2 class="">Medium break point</h2>
-         <p class="">Image = 400px - lion400.png</p>
-    </div> 
-    
-    <div class="small">
-         <h2 class="">Small break point</h2>
-         <p class="">Image = 200px - lion200.png</p>
-    </div>
 
-
-
+         
             <section>
 
                 <h1>Responsive images with picture tag</h1>
 
                 <picture>
-                    <source media="(min-width: 1000px)" srcset="img/lion800.png">
-                    <source media="(min-width: 768px)" srcset="img/lion400.png">
-                    <source media="(min-width: 250px)" srcset="img/lion200.png">
-                    <img src="img/lion800.png" alt="scrset" style="width:auto;">
+                    <source media="(min-width: 800px)" srcset="img/large800.jpg">
+                    <source media="(min-width: 465px)" srcset="img/medium400.jpg">
+                    <source media="(min-width: 200px)" srcset="img/small200.jpg">
+                    <img src="img/large800.jpg" alt="scrset" style="width:auto;">
                 </picture>
+                
             </section>
 
 
 
 
-            <div id="network">Show in network tab.</div>
+
           
     
     </div><!-- container -->
-
-    <script>
-    
-        document.getElementById("stop").addEventListener('click', function(e) {
-
-            // alert('stop button clicked');
-            // console.log(e);
-            // console.log(e.timeStamp);
-            document.getElementById("instruction").className = "stop";
-
-        })
-
-    </script>
     
 </body>
 
