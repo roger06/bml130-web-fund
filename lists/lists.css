@@ -1,0 +1,60 @@
+body {
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica;
+    font-size: 100%;
+   
+    
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ 
+
+/*html 5 elements */
+
+header {
+    height: 90px;
+    background-color: #4d4849;
+    color: white;
+}
+
+section {
+    min-height: 500px;
+    background-color: lightgray;
+ 
+    float: right;
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+    background-color: #7a7575;
+    min-height: 500px;
+    float: left;
+}
+
+footer {
+    height: 50px;
+    clear: both;
+    background-color: #9f9d9d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
+<html>
+
 <head>
-    <title>Responsive Web design - scaled image</title>
+    <title>Responsive Web design - images</title>
     <!--    <link rel="stylesheet" href="responsive.css">-->
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
@@ -11,56 +11,24 @@
 
             margin: 0 auto;
             width: 80%;
-            font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
         section {
-            border: 1px red dashed;
-            position: relative;
+            border: 1px red dashed
         }
-        
-        #imagedetails{ 
-            border: 1px dashed black;
-            position: absolute;
-            right: 1%;
-            top: 6%;
-            padding: 15px;
-            border-radius: 15px;
-            }
 
-        .imagedetails {
-
-            height: 20px;
-           
-        }
-        
         img {
 
             width: 100%;
-            max-width: 700px;
+            max-width: 800px;
 
         }
-        .imgnostyle {
-
-                    width: 100%;
-                    /* max-width: 700px; */
-                    border: 2px black solid;
-                    max-width: inherit;
-
-        }
-
-
          .small {
                 display: none;
             }
 
-        .blue {
 
-            color: white;
-            background-color: blue;
-        }
-
-        @media only screen and (max-width: 450px) {
+        @media only screen and (max-width: 600px) {
             body {
                 background-color: lightblue;
             }
@@ -71,13 +39,6 @@
 
             }
 
-            #imagedetails{ 
-          
-                position:inherit;
-           
-             
-            }
-            
             section {
                 border: 1px darkblue dotted
             }
@@ -98,49 +59,21 @@
 <body>
 
     <div id="container">
+
+
+
         <section>
+
             <h1>Inline image</h1>
+
             <h2 class="large">Large breakpoint </h2>    
-            <p class="large">At the large break point the image is 100%,. But has a max-width of 700px.<br>
-            This is not efficient.</p>
-            <h2 class="small">Small breakpoint (450px)</h2>    
-
-            <img src="img/lion.jpg" alt="Image" id="photo">
-
-            <div id="imagedetails">Image details will be updated here</div>
-            <!-- div to show details about the image -->
+            <h2 class="small">Small breakpoint </h2>    
+            <p>Image is 500 px wide.</p>
+            <img src="img/large800.jpg" alt="Image">
 
         </section>
 
-        <button id="showdetails">Show image details</button>
-        <button id="showorig">Show orginal image</button>
-        <script> 
-        
-        var img = new Image();
-        img.src = 'img/lion.jpg';
 
-         
-               document.getElementById('showdetails').onclick = function () {
-               var w = document.getElementById("photo").width;
-               var h = document.getElementById("photo").height;
-               console.log("Image width = " + w);
-               console.log("Image height = " + h);
-               document.getElementById("imagedetails").className = "blue";
-               document.getElementById("imagedetails").innerHTML = "Width: " + w + ' x height:' + h;
-            }
-        
-
-            document.getElementById('showorig').onclick = function () {
-            
-            
-               document.getElementById("photo").className = "imgnostyle";
-            }
-        
-
-        
-       
-            
-        </script>
 
 
 

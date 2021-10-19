@@ -1,0 +1,15 @@
+h2 {
+    font-family: sans-serif;
+    color: forestgreen;
+    font-size: 1.3em;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+ 
+ 
+.btn-group {
+    
+    -ms-flex-line-pack: center;
+        align-content: center;
+ 
+}
