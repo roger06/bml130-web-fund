@@ -1,7 +1,12 @@
  
+ #container {
+     width: 80%;
+     margin: 0 auto ;
+     background-color: rgba(130, 98, 98, 0.149);
+ }
  header {
      width: 100%;
-     height: 200px;
+     height: 100px;
      outline: blue 1px solid;
  }
 
@@ -9,22 +14,25 @@
      color: blue;
  }
 
+ section {
+    display: flex;
+ }
  aside {
-     width: 20%;
      min-height: 200px;
-     border: red 1px solid;
-     float: left;
+     outline: red 1px solid;
+     flex: 1 1;
  }
 
  main {
      background-repeat: no-repeat;
      background-size: cover;
      background-image: url("woman.jpg");
-
-     width: 80%;
      min-height: 500px;
-     border: black 1px solid;
-     float: left;
+     outline: black 1px solid;
+     flex: 5 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
     }
     
     main p {
@@ -32,19 +40,14 @@
      font-size: 60px;
      color: #000000ae;
 
-
  }
 
  /* footer */
  footer {
-
-     
-     width: 100%;
      height: 100px;
      border: pink 1px solid;
      padding: 15px 33px;
 
-     clear: both;
  }
 
  p {
@@ -65,13 +68,21 @@
          background-color: lightblue;
      }
 
+     #container {
+        width: 100%;
+    }
+
+
      header {
          height: 50px;
      }
 
+     section {
+
+        flex-direction: column;
+     }
+
      aside {
-         float: none;
-         width: 100%;
          min-height: 50px;
          outline: 1px red solid;
 
@@ -103,16 +114,20 @@
 
 
      main {
-         float: none;
-         width: 100%;
-         min-height: 200px;
-         height: 300px;
+         /* min-height: 200px; */
+         height: 100%;
          display: flex;
          justify-content: center; 
          align-items: center;
      }
 
-     
 
+ }
 
+ @media screen and (max-width: 400px),
+ screen and (max-device-width: 400px) {
+
+        aside {
+            display: none;
+        }
  }
