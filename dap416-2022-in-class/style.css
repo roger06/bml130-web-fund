@@ -9,22 +9,27 @@
      color: blue;
  }
 
+
+ section {
+
+    display: flex;
+ }
  aside {
-     width: 20%;
      min-height: 200px;
      border: red 1px solid;
-     float: left;
+     flex: 1 0 0;
+    
  }
 
  main {
+
+    flex: 10 0 0 ;
      background-repeat: no-repeat;
      background-size: cover;
      background-image: url("woman.jpg");
 
-     width: 80%;
      min-height: 500px;
      border: black 1px solid;
-     float: left;
     }
     
     main p {
@@ -44,7 +49,7 @@
      border: pink 1px solid;
      padding: 15px 33px;
 
-     clear: both;
+     
  }
 
  p {
@@ -69,10 +74,15 @@
          height: 50px;
      }
 
+     section {
+
+        flex-direction: column;
+     } 
+
      aside {
-         float: none;
-         width: 100%;
-         min-height: 50px;
+       
+        
+         
          outline: 1px red solid;
 
      }
@@ -103,8 +113,7 @@
 
 
      main {
-         float: none;
-         width: 100%;
+      
          min-height: 200px;
          height: 300px;
          display: flex;
