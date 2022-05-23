@@ -20,16 +20,16 @@
  aside {
      min-height: 200px;
      outline: red 1px solid;
-     flex: 1 1;
+     flex: 1 5 50%;
  }
 
  main {
+     flex: 4 1 50%;
      background-repeat: no-repeat;
      background-size: cover;
      background-image: url("woman.jpg");
      min-height: 500px;
      outline: black 1px solid;
-     flex: 5 1;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -61,73 +61,3 @@
 
  /* 600px and below */
 
- @media screen and (max-width: 900px),
- screen and (max-device-width: 900px) {
-   
-    body {
-         background-color: lightblue;
-     }
-
-     #container {
-        width: 100%;
-    }
-
-
-     header {
-         height: 50px;
-     }
-
-     section {
-
-        flex-direction: column;
-     }
-
-     aside {
-         min-height: 50px;
-         outline: 1px red solid;
-
-     }
-
-
-     aside ul {
-         
-         list-style: none;
-         padding: 0;
-         font-size: 14px;
-         display: flex;
-         justify-content: space-around;
-
-     }
-
-     aside ul li {
-         margin-right: 15px;
-         border: 1px black dotted;
-         padding: 3px;
-     }
-
-     aside a:link {
-
-        color: red;
-        font-size: 18px;
-
-     }
-
-
-     main {
-         /* min-height: 200px; */
-         height: 100%;
-         display: flex;
-         justify-content: center; 
-         align-items: center;
-     }
-
-
- }
-
- @media screen and (max-width: 400px),
- screen and (max-device-width: 400px) {
-
-        aside {
-            display: none;
-        }
- }
