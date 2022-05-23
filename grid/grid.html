@@ -1,166 +1,72 @@
 <!DOCTYPE html>
-<html>
-	<head>
-        <meta charset="utf-8">
+<html lang="en">
+<head>
+    <title>CSS Grid basics</title>
 
-<!--    Font awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--   Google fonts     -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+    <style>
 
-        <style>
+        #container > * {
 
-            body {
-                margin: 1.7em 0 0 0;
-                padding: 0;
-                font-family:'Open Sans Condensed' ,  'Roboto',  sans-serif;
-            }
+            height: 150px;
+        }
+        
+        #container{
+            
+            display: grid;
+            /* grid-template-columns: 25% 25% 25%; */
 
-            #container {
+            /* grid-template-columns: 35% 15% 25%; */
+            grid-template-columns: 1fr 2fr 3fr; 
 
-                border: 1px solid grey;
-                border-radius: 15px;
-                min-height: 97vh;
-                width:80%;
-                margin: 0 auto;
-                padding: 1em;
+            gap: 10px;
+            /* grid-template-columns: 25% 25% 25%;  */
 
-            }
+        }
+        
+        .item1{
+            background-color: red;
+        }
+        
+        .item2{
 
-            header footer {
-                height: 2em;
-            }
+            background-color: rgb(111, 80, 80);
+        }
+        
+        .item3{
 
+            background-color: rgba(26, 191, 86, 0.666);
+        }
+        .item4{
 
+            background-color: rgba(30, 12, 133, 0.666);
+        }
+        .item5{
 
+            background-color: rgba(228, 40, 26, 0.666);
+        }
+        .item6{
 
-            /*   GRID   */
-
-
-
-            .grid-container {
-              display: grid;
-
-              grid-template-areas:
-               'header header header header header header'
-                'menu main main main right right'
-                'menu footer footer farright farright farright';
-
-              grid-gap: 10px;/*this acts like a border - the elements within the container*/
-              background-color: #c5cdd4;
-              padding: 2px;/* space around all items  */
-              margin-bottom: 2.5em;
-                 font-size: 0.7em;
-                font-variant: small-caps;
-                font-family: 'Roboto';
-                line-height: 1em;
-                margin: 1.2em;
-
-            }
+            background-color: rgba(165, 24, 167, 0.858);
+        }
 
 
-            .grid-container > div {
-              background-color:floralwhite;
-              padding: 2px 0;
+    </style>
+</head>
+<body>
 
-            }
-
-            .item1 { grid-area: header; }
-            .item2 { grid-area: menu; }
-            .item3 { grid-area: main; }
-            .item4 { grid-area: right; }
-            .item5 { grid-area: footer; }
-            /* test new one */
-            .item6 { grid-area: farright; }
-
-
-
-            .minimenu {
-
-             display: flex;
-            flex-direction: column;
-
-            }
-
-            .minimenuitem {
-
-             display: flex;
-
-
-            }
-
-
-
-        </style>
-
-
-
-        <title>CSS Grid layout</title>
-
-
-    </head>
-
-    <body>
-
+    <h1>CSS Grid basics</h1>
     <div id="container">
 
-        <header>
-            <h1>CSS Grid</h1>
-        </header>
-
-        <section>
-
-            <div id="top">
-
-               <div class="top-left">I'm not a fan of CSS <a href="https://goo.gl/KgpW9x" target="_blank">Grid</a>  - but here's some code if you want.
-                </div>
-
-            </div>
-
-            <div class="grid-container">
-
-                <div class="item1"><h3>Grid head</h3><p class="small">The grid-area CSS property is a shorthand property for grid-row-start, grid-column-start, grid-row-end and grid-column-end, specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area.</p></div>
-
-              <div class="item2">Mini menu
-
-                  <div class="minimenu">
-
-                      <div class="minimenuitem"><a href="">One</a></div>
-                      <div class="minimenuitem"><a href="">One</a></div>
-                      <div class="minimenuitem"><a href="">One</a></div>
-                      <div class="minimenuitem"><a href="">One</a></div>
-
-                  </div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
 
 
 
-                </div>
-
-
-                <div class="item3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui</div>
-
-
-                <div class="item4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui</div>
-
-
-                <div class="item5">Lower left  content / footer</div>
-
-                <div class="item6">where doe this go?</div>
-            </div><!--grid-->
-
-
-
-
-
-
-
-        </section>
-
-        <footer>
-
-            <p>Enjoy!</p>
-        </footer>
-
-       </div>
-    </body>
+    </div>
+    
+</body>
 </html>
