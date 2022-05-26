@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grid basics - fractal units</title>
+    <link rel="stylesheet" href="non-grid-styles.css">
+    <style>
+
+   
+        
+        #container{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr 1fr;
+            /* adding gap will not break the layout with fr */
+            gap: 13px;
+
+           /* width: 80%; */
+           outline: 1px dotted black;
+        }
+      
+
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Grid basics - fractal units - plus gap</h1>
+    <div id="container">
+
+        <div class="item1">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vitae odit eius numquam, voluptatibus quam fugiat delectus, odio mollitia asperiores inventore omnis. Libero, dolore dicta.</p>
+        </div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+
+
+
+    </div>
+    
+</body>
+</html>
