@@ -56,7 +56,7 @@ p {
 
 /* 600px and below */
 
-@media screen and  (max-width: 600px), screen and (max-device-width: 900px ) {
+@media screen and  (max-width: 900px), screen and (max-device-width: 900px ) {
     body {
       background-color: lightblue;
     }
@@ -75,10 +75,13 @@ p {
     aside ul {
         list-style: none;
         padding: 0;
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+
     }
     aside ul li {
         margin-right: 10px;    
-        float: left;
         border: 1px black dotted;
     }
 
@@ -86,8 +89,15 @@ p {
     main {
         float: none;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
+        main p {
+
+            
+        }
 
 
   }
