@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CSS Grid basics</title>
+    <title>CSS Grid basics - fractal units</title>
 
     <style>
 
@@ -13,11 +13,12 @@
         #container{
             
             display: grid;
-            grid-template-columns: 25% 25% 25%;
+            grid-template-columns: 1fr 1fr 2fr 1fr;
+            /* adding gap will not break the layout with fr */
+            gap: 13px;
 
-         
-
-           
+           /* width: 80%; */
+           outline: 1px dotted black;
         }
         
         .item1{
@@ -51,7 +52,7 @@
 </head>
 <body>
 
-    <h1>CSS Grid basics</h1>
+    <h1>CSS Grid basics - fractal units - plus gap</h1>
     <div id="container">
 
         <div class="item1"></div>

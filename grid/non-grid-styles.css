@@ -1,0 +1,45 @@
+body {
+    font-size: 100%;
+
+}
+
+
+#container>* {
+
+    height: 150px;
+    padding: 10px;
+}
+
+#container p {
+
+    font-size: 1rem;
+}
+
+.item1 {
+    background-color: red;
+}
+
+.item2 {
+
+    background-color: rgb(111, 80, 80);
+}
+
+.item3 {
+
+    background-color: rgba(26, 191, 86, 0.666);
+}
+
+.item4 {
+
+    background-color: rgba(30, 12, 133, 0.666);
+}
+
+.item5 {
+
+    background-color: rgba(228, 40, 26, 0.666);
+}
+
+.item6 {
+
+    background-color: rgba(165, 24, 167, 0.858);
+}
