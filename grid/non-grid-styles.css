@@ -6,8 +6,8 @@ body {
 
 #container>* {
 
-    height: 150px;
-    padding: 10px;
+    height: 160px;
+    padding: 1px  5px 5px 8px;
 }
 
 #container p {
