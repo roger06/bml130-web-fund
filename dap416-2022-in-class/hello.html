@@ -7,7 +7,18 @@
         style sheet into separate file
         change colours to hex or rgb
     -->
-  
+    <style>
+        footer img {
+
+            width: 300px;
+            height: auto;
+        }
+
+        .footerimg {
+            width: 500px;
+
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 
     <title>Document</title>
@@ -32,16 +43,79 @@
     <main>
         <p>This is some opaque text...</p>
 
-       
-           
-       
+        <table border="1" width="100%">
+            <thead>
+
+                <tr><th>colu1 </th><th>colu2 </th><th>colu3 </th></tr>
+            </thead>
+            <tr> <td>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima cum quo, dolor dolores non doloribus! Eum numquam quas quis ipsum distinctio tenetur nobis repudiandae pariatur similique totam, sequi expedita sint voluptatibus reprehenderit error.  
+            </td><td>two</td><td>three</td>  </tr>
+
+        </table>
+
+
+        <form action="process.htm" method="get">
+
+            <p>
+                name
+                <input type="text" name="firstName" placeholder="enter your name" required>
+            </p>
+
+            <p>
+
+                <input type="password" name="" id="">
+
+            </p>
+            <p>
+                age
+                <input type="number" name="age" min="0" max="10">
+            </p>
+            <p>
+                range
+                <input type="range" name="age" min="0" max="10">
+            </p>
+
+            <p>
+                COLOUR <input type="color" name="" id="">
+
+
+            </p>
+
+            <p>
+
+                    date <input type="datetime-local" name="" id="">
+
+            </p>
+
+            <p>email
+
+                <input type="email" name="email" id="">
+            </p>
+            <p><input type="submit" value="go"></p>
+
+        </form>
+
 
     </main>
-   
+
     <footer>footer
 
-<!-- Dave - can you fix on Monday? -->
- 
+        <!-- Dave - can you fix on Monday? -->
+        <a href="#bottom" target="_blank">
+            <img src="woman.jpg" alt="woman">
+
+        </a>
+        <p id="bottom" style="margin-top: 900px;">
+
+
+            asdsadasdasd
+
+
+
+
+        </p>
+
 
     </footer>
 

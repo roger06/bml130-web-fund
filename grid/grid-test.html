@@ -5,19 +5,16 @@
 
     <style>
 
+/* target direct children only */
         #container > * {
 
-            height: 150px;
+            height: 100px;
         }
         
         #container{
-            
             display: grid;
-            grid-template-columns: 25% 25% 25%;
-
-         
-
-           
+            grid-template-columns: 1fr repeat(3, 4fr) ;
+            gap: 10px;
         }
         
         .item1{
@@ -40,10 +37,28 @@
         .item5{
 
             background-color: rgba(228, 40, 26, 0.666);
+            /* grid-column: 1 / 4; */
         }
         .item6{
 
             background-color: rgba(165, 24, 167, 0.858);
+        }
+
+        .grid-span-2-cols {
+
+            grid-column: span 2;
+        }
+
+     
+
+        @media (max-width:900px) {
+
+            #container {
+
+                grid-template-columns: 1fr 1fr;
+            }
+
+            
         }
 
 
@@ -53,16 +68,16 @@
 
     <h1>CSS Grid basics</h1>
     <div id="container">
-
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
-        <div class="item4"></div>
-        <div class="item5"></div>
-        <div class="item6"></div>
-
-
-
+        <div class="item1" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam saepe corrupti, laborum minus facere cupiditate aliquid commodi sed maiores autem molestiae repellat?</p>
+     
+            </div>
+        <div class="item2">Lorem, ipsum.</div>
+        <div class="item3">fdsdfsds</div>
+        <div class="item4 grid-span-2-cols">sdf</div>
+        <div class="item5">sdf</div>
+        <div class="item6">sdf</div>
+       
     </div>
     
 </body>

@@ -19,9 +19,9 @@ aside {
 main {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("woman.jpg");
+    /* background-image: url("woman.jpg"); */
 
-    font-size: 70px;
+    font-size: 14px;
     width: 80%;
     min-height: 500px;
     outline: black 1px solid;
