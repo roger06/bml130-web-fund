@@ -1,0 +1,28 @@
+ aside {
+     width: 40%;
+     min-height: 200px;
+     outline: red 15px;
+     /* float: left; */
+ }
+
+
+
+
+
+
+ aside ul {
+     list-style: none;
+
+     /* display: flex; */
+     /* flex-direction: row; */
+     /* flex-direction: row-reverse; */
+
+ }
+
+ aside ul li {
+     margin-right: 10px;
+     border: 1px black solid;
+     width: 33px;
+     padding: 20px;
+     display: none;
+ }
