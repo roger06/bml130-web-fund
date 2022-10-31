@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Grid. More advanced - different layouts</title>
+    <link rel="stylesheet" href="non-grid-styles.css">
+    <style>
+        #container {
+
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+            grid-template-columns: repeat(4, 1fr);
+            /* adding gap will not break the layout with fr */
+            gap: 25px;
+
+            width: 90%;
+            margin: 0 auto;
+            outline: 1px dotted black;
+        }
+        
+        #container > div {
+            border-radius: 0.5rem;
+            box-shadow: 1px 8px 7px 8px gray;
+        }
+
+        .item2 {
+
+            background-image: url("img/world-sketch.png");
+            background-size: contain;
+        }
+
+        .item4 {
+            display: flex;
+        }
+
+        .item4 p {
+            margin-left: 10px;
+        }
+
+        .span-2cols{
+            grid-column: span 2;
+        }
+        .span-2rows{
+            grid-row: span 2;
+        }
+
+      
+
+        @media (max-width:1200px) {
+
+            #container {
+                width: 90%;
+                margin: 0 auto;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+
+        }
+        @media (max-width:768px) {
+
+            #container {
+                width: 80%;
+                margin: 0 auto;
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Grid basics - fractal units - plus gap</h1>
+    <div id="container">
+
+        <div class="item1 span-2cols">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vitae odit eius numquam, voluptatibus quam
+                fugiat delectus, odio mollitia asperiores inventore omnis. Libero, dolore dicta.</p>
+        </div>
+        <div class="item2">
+
+        </div>
+        <div class="item3" ></div>
+        <div class="item4">
+            <img src="img/light-bulb.png" alt="light">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde odit animi veritatis, quaerat excepturi
+                expedita aspernatur magni voluptas culpa illum dolorem? Culpa totam necessitatibus, quam praesentium
+                esse fuga.</p>
+            </div>
+            <div class="item5 span-2cols"><h2>Sub heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in distinctio autem est, ullam provident. A ratione facilis aperiam beatae possimus laborum perspiciatis, quis quisquam corrupti, consectetur quidem sequi quod laboriosam veniam minus!</p>
+        
+        </div>
+        <div class="item6">
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, similique deserunt corporis, explicabo omnis, dolore quidem quis error libero earum est ab?
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officia, qui ducimus delectus quia non optio! In explicabo obcaecati adipisci nemo necessitatibus.</p>
+            </p>
+        </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
