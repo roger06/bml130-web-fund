@@ -1,0 +1,43 @@
+/*  flex - grow / shrink / basis  */
+
+body {
+
+    width: 70%;
+    background-color: whitesmoke;
+    outline: 1px dotted gray;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+
+}
+
+#container {
+
+    display: flex;
+}
+
+article {
+    padding: 7px;
+    /* flex: 0 1 400px; */
+    outline: 1px red solid;
+}
+
+.bike1 {
+
+    flex: 1 0 300px;
+}
+
+.bike2 {
+
+    flex: 0 0 300px;
+}
+
+.bike3 {
+
+    flex: 0 0 300px;
+}
+
+img {
+    width: 90%;
+    /* max-width: 300px; */
+}

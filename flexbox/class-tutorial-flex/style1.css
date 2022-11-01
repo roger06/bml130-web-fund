@@ -1,0 +1,10 @@
+/* basic style with no flex. */
+
+body {
+
+    width: 80%;
+    background-color: whitesmoke;
+    outline: 1px dotted gray;
+    margin: 0 auto;
+
+}
