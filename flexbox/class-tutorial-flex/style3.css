@@ -19,7 +19,7 @@ body {
 article {
     padding: 7px;
     /* flex: 0 1 400px; */
-    outline: 1px red solid;
+    outline: 1px rgb(47, 1, 120) dashed;
 }
 
 .bike1 {
