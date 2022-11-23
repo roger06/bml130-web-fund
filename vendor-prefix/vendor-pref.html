@@ -11,7 +11,18 @@
     <title>vendor prefixes</title>
 
     <style>
-        body {font-size: 100%;  }
+        .crossfade {
+            width: 500px;
+            height: 400px;
+            background-image: -webkit-cross-fade(url("city.jpg"), url("bike.jpg"), 75%);
+            background-image: cross-fade(url("city.jpg"), url("bike.jpg"), 75%);
+        }
+
+
+        body {
+            font-size: 100%;
+        }
+
         .box {
             font-family: monospace;
             font-size: 1.5em;
@@ -34,7 +45,7 @@
             background-image: -o-linear-gradient(left, #999999 0%, #ffffff 100%);
 
 
-       
+
 
 
 
@@ -47,14 +58,21 @@
     <div class="box">
         <p>This is a box. It should have rounded corners and a gradient background.</p>
     </div>
-    
-    
+
+
     <p>Copy this into <a href="https://autoprefixer.github.io/"></a>https://autoprefixer.github.io/ </p>
     <pre>
-    
+
      background-image: linear-gradient(left, #999999 0%, #ffffff 100%);
     </pre>
-    
+
+
+
+
+
+
+    <div class="crossfade"></div>
+
 </body>
 
 </html>

@@ -1,0 +1,62 @@
+ /* Style the list 'container'  */
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+        }
+
+    
+
+        /* style the links  */
+        ul.topnav li a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* hover */
+        ul.topnav li a:hover {
+            background-color: #555;
+        }
+
+        /* Hide the icon initially  */
+        ul.topnav li.icon {
+            display: none;
+        }
+
+
+
+
+
+        @media screen and (max-width:768px) {
+
+            ul.topnav li {
+                display: none;
+            }
+
+            ul.topnav li.icon {
+                display: inline-block;
+
+            }
+
+
+            ul.topnav.responsive {
+               
+
+                flex-direction: column;
+            }
+
+        
+
+            ul.topnav.responsive li {
+                display: flex;
+            }
+ 
+        }
