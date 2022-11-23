@@ -14,8 +14,15 @@
         .crossfade {
             width: 500px;
             height: 400px;
-            background-image: -webkit-cross-fade(url("city.jpg"), url("bike.jpg"), 75%);
+ 
+            /* this doesn't (shouldn't ! ) work in chrome*/
             background-image: cross-fade(url("city.jpg"), url("bike.jpg"), 75%);
+            
+            
+            /* this is required for Chromium browsers */
+            background-image: -webkit-cross-fade(url("city.jpg"), url("bike.jpg"), 75%);
+            
+            /* neither of the above will work in Firefox - in fact FF does not support it! */
         }
 
 
