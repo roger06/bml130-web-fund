@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+
+        header {
+
+            width: 80%;
+            height: 100px;
+            outline: 1px solid gray;
+            display: flex;
+            align-items: center;
+            /* justify-content: start; */
+            justify-content: start;
+            align-items: flex-start;
+            align-content: stretch;
+        }
+        
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            outline: 1px solid red;
+            justify-content: start;
+            /* align-items: flex-start; */
+            /* align-content: stretch; */
+
+            
+        }
+        
+        ul li {
+            outline: 1px solid blue;
+            height: 30px;
+            padding: 10px;
+            flex: 0 1 auto;
+            align-self: auto;
+            
+        }
+        li:last-child {
+            border: 2px solid orange;
+            /* margin-left: auto; */
+            flex: 0 1 auto;
+             align-self: flex-end;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <ul>
+                <li><a href="http://">one</a></li>
+                <li><a href="http://">two</a></li>
+                <li><a href="http://">three</a></li>
+                <li><a href="http://">four</a></li>
+                <li><a href="http://">far right.</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
