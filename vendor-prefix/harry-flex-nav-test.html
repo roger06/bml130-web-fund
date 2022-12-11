@@ -12,10 +12,6 @@
             outline: 1px solid gray;
             display: flex;
             align-items: center;
-            /* justify-content: start; */
-            justify-content: start;
-            align-items: flex-start;
-            align-content: stretch;
         }
         
         ul {
@@ -23,11 +19,8 @@
             margin: 0;
             padding: 0;
             list-style-type: none;
-            outline: 1px solid red;
-            justify-content: start;
-            /* align-items: flex-start; */
-            /* align-content: stretch; */
-
+            outline: 4px solid red;
+            width: 100%;
             
         }
         
@@ -35,18 +28,15 @@
             outline: 1px solid blue;
             height: 30px;
             padding: 10px;
-            flex: 0 1 auto;
-            align-self: flex-start;
             
         }
+
+        /* last child is fairly self explanatory - in this case it's the last li */
         li:last-child {
             border: 2px solid orange;
-            /* margin-left: auto; */
-            flex: 0 1 auto;
-             align-self: flex-end;
+            margin-left: auto;
+            /* this is the bit that forces the last item to the right */
 }
-
-
 
     </style>
 </head>
@@ -54,7 +44,7 @@
 
     <header>
 
-        <nav>
+       
 
             <ul>
                 <li><a href="http://">one</a></li>
@@ -63,7 +53,7 @@
                 <li><a href="http://">four</a></li>
                 <li><a href="http://">far right.</a></li>
             </ul>
-        </nav>
+        
     </header>
     
 </body>
