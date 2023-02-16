@@ -1,0 +1,60 @@
+
+<!-- https://medium.com/@iamryanyu/how-to-align-last-flex-item-to-right-73512e4e5912<!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+
+        header {
+
+            width: 80%;
+            height: 100px;
+            outline: 1px solid gray;
+            display: flex;
+            align-items: center;
+        }
+        
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            outline: 4px solid red;
+            width: 100%;
+            
+        }
+        
+        ul li {
+            outline: 1px solid blue;
+            height: 30px;
+            padding: 10px;
+            
+        }
+
+        /* last child is fairly self explanatory - in this case it's the last li */
+        li:last-child {
+            border: 2px solid orange;
+            margin-left: auto;
+            /* this is the bit that forces the last item to the right */
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+       
+
+            <ul>
+                <li><a href="http://">one</a></li>
+                <li><a href="http://">two</a></li>
+                <li><a href="http://">three</a></li>
+                <li><a href="http://">four</a></li>
+                <li><a href="http://">far right.</a></li>
+            </ul>
+        
+    </header>
+    
+</body>
+</html>
