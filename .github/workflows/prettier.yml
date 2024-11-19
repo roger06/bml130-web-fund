@@ -23,3 +23,15 @@ jobs:
           # This part is also where you can pass other options, for example:
           prettier_options: --write **/*.{js,md}
           only_changed: True
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: Apply Formatting"
+          branch: ${{ github.head_ref }}
+      
+  commits:
+    name: Conventional Commits
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: webiny/action-conventional-commits@v1.0.3
