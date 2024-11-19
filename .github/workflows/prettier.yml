@@ -21,7 +21,7 @@ jobs:
         uses: creyD/prettier_action@v4.3
         with:
           # This part is also where you can pass other options, for example:
-          prettier_options: --write **/*.{js,md,css,scss,jsx,ts,tsx,html,json,php}
+          prettier_options: --write **/*.{js,md,css,scss,jsx,ts,tsx,json,php}
           only_changed: True
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
